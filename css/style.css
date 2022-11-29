@@ -1,0 +1,287 @@
+@font-face {
+    font-family: Interbold;
+    src: url(Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: Interextrabold;
+    src: url(Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: Interregular;
+    src: url(Inter-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 60px;
+    background-color: #fff;
+}
+
+nav {
+    padding-bottom: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: Interregular;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
+
+.navbar-links a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.toggle {
+    position: absolute;
+    right: 6rem;
+    display: none;
+}
+
+main {
+    display: flex;
+    padding-bottom: 60px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section img {
+    width: 90%;
+}
+
+section h1 {
+    font-family: Interextrabold;
+    font-size: 44px;
+    color: hsl(240, 100%, 5%);
+    width: 75%;
+}
+
+section p {
+    font-family: Interregular;
+    font-size: 15px;
+    width: 80%;
+    padding-bottom: 30px;
+
+}
+
+section a {
+    border: 1px solid hsl(5, 85%, 63%);
+    width: fit-content;
+    padding: 60px;
+    background-color: hsl(5, 85%, 63%);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-family: Intervariable;
+    font-size: 15px;
+}
+
+section a:hover {
+    border: 1px solid hsl(240, 100%, 5%);
+    background-color: hsl(240, 100%, 5%);
+}
+
+.section {
+    display: flex;
+    padding-top: 30px;
+    gap: 150px;
+}
+
+#section {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(240, 100%, 5%);
+    width: 740px;
+    padding: 24px;
+}
+
+aside h1 {
+    font-family: Interbold;
+    font-size: 30px;
+    color: hsl(35, 77%, 62%);
+    padding-bottom: 10px;
+}
+
+aside a {
+    font-family: Interbold;
+    font-size: 17px;
+    color: hsl(36, 100%, 99%);
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+aside p {
+    font-family: Interregular;
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+    padding-top: 14px;
+    padding-bottom: 30px;
+}
+
+#aside2, #aside3 {
+    border-bottom: 1px solid hsl(233, 8%, 79%);
+}
+
+#aside2, #aside3, #aside4 {
+    padding-top: 20px;
+}
+
+summary {
+    display: flex;
+}
+
+summary img {
+    width: 100px;
+}
+
+.trend {
+    display: flex;
+    gap: 10px;
+}
+
+.trend h1 {
+    font-family: Interbold;
+    color: hsl(233, 8%, 79%);
+    padding-bottom: 10px;
+}
+
+.trend a {
+    font-family: Interbold;
+    font-size: 17px;
+    color: hsl(240, 100%, 5%);
+    text-decoration: none;
+}
+
+.trend a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.trend p {
+    font-family: Interregular;
+    font-size: 15px;
+    padding-top: 12px;
+}
+
+#trend1 p {
+    width: 80%;
+}
+
+#trend2 p {
+    width: 90%;
+}
+
+#trend3 p {
+    width: 95%;
+}
+
+@media screen and (max-width:576px) {
+    body {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toggle, .toggle_close {
+        display: flex;
+        padding-top: 10px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .navbar-links {
+        display: none;
+        border: 1px solid #fff;
+        background-color: #fff;
+        position: absolute;
+        right: 0rem;
+        top: 5rem;
+        width: 50%;
+        height: 100vh;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: left;
+        padding: 14px;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        position: absolute;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section img {
+        width: 100%;
+        /* height: 230px; */
+    }
+
+    section p {
+        width: 100%;
+    }
+
+    section a {
+        margin-bottom: 70px;
+    }
+
+    .section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    summary {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+    
+}
